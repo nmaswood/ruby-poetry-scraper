@@ -10,7 +10,7 @@ class SQLActions
     action = @@db.execute <<-SQL
   CREATE TABLE IF NOT EXISTS AUTHORS(
     ID INTEGER PRIMARY KEY   AUTOINCREMENT,
-    NAME TEXT,
+    NAME TEXT UNIQUE,
     URL TEXT);
     SQL
   end
@@ -39,9 +39,7 @@ class SQLActions
     create_actions.each { |func| self.send(func) }
   end
 
-  def enter
-    binding.pry
-  end
+  def insert_authors
 
 end
 

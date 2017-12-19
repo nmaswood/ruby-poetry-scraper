@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 gem 'pry'
-gem 'nokogiri'
+gem 'nokogiri', '~> 1.8.1'
