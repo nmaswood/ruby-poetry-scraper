@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
 gem 'pry'
 gem 'nokogiri', '~> 1.8.1'
+gem 'yaml2sql'
+# gem 'Faraday'
+gem 'mongo'
+gem 'sinatra'
